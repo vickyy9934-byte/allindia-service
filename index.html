@@ -1,105 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="hi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ALL INDIA BANKING | Banking Services</title>
-<meta name="description" content="Bank account opening assistance, BC CSP information, banking agent work and latest updates.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b2f63">
+<meta name="description" content="ALL INDIA BANKING & DIGITAL SEVA — बैंकिंग जानकारी, Kotak 811 अकाउंट सहायता और जन सेवा डिजिटल सेंटर की ऑनलाइन सेवाओं की जानकारी।">
+<title>ALL INDIA BANKING & DIGITAL SEVA</title>
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#f3f6fb;color:#172b4d}
-header{background:white;padding:18px 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;box-shadow:0 2px 10px #0001}
-.logo{font-size:26px;font-weight:900;color:#15457e}
-.logo span{color:#df2738}
-nav{display:flex;gap:14px;flex-wrap:wrap}
-nav a{text-decoration:none;color:#172b4d;font-weight:bold}
-.hero{background:linear-gradient(135deg,#073c80,#126ec0);color:white;padding:45px 6%}
-.hero h1{font-size:36px;margin:15px 0}
-.hero p{font-size:18px;line-height:1.7}
-.btn{display:inline-block;background:#ffdb35;color:#142d50;padding:14px 20px;margin:8px 8px 0 0;border-radius:9px;text-decoration:none;font-weight:bold}
-section{padding:28px 5%}
-h2{color:#15457e}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-.card{background:white;padding:22px;border-radius:15px;box-shadow:0 3px 12px #0001}
-.card h3{color:#15457e}
-.card p{line-height:1.6}
-.notice{background:#fff5d6;padding:15px;border-radius:10px;line-height:1.6}
-footer{background:#102d50;color:white;text-align:center;padding:25px;line-height:1.7}
+:root{--navy:#082b59;--blue:#0b63b6;--sky:#eaf4ff;--gold:#ffd83d;--ink:#172b45;--muted:#5d6d80;--white:#fff;--green:#12834b;--line:#dce6f1;--shadow:0 12px 32px rgba(7,40,82,.10)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Noto Sans Devanagari",Arial,sans-serif;color:var(--ink);background:#f5f8fc;line-height:1.65}a{color:inherit;text-decoration:none}.topline{background:var(--navy);color:#fff;text-align:center;padding:8px 12px;font-size:13px}.wrap{width:min(1120px,92%);margin:auto}.header{background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 4px 18px #092f6010}.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}.brand{font-weight:900;font-size:22px;line-height:1.12;color:var(--navy);letter-spacing:-.4px}.brand span{color:#e22b3b}.brand small{display:block;font-size:10px;letter-spacing:1.5px;color:var(--muted);margin-top:5px}.navlinks{display:flex;gap:20px;align-items:center;font-weight:700;font-size:14px}.navlinks a:hover{color:var(--blue)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:12px;padding:12px 17px;font-weight:800;font-size:14px;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-1px)}.btn-gold{background:var(--gold);color:#172b45}.btn-green{background:#19a75b;color:#fff}.btn-blue{background:var(--blue);color:#fff}.hero{background:radial-gradient(circle at 85% 15%,#2388d9 0,transparent 35%),linear-gradient(125deg,#082b59,#075fae);color:#fff;padding:58px 0 54px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center}.eyebrow{display:inline-block;border:1px solid #ffffff50;background:#ffffff12;border-radius:99px;padding:6px 12px;font-weight:700;font-size:13px}.hero h1{font-size:clamp(34px,5vw,55px);line-height:1.13;margin:18px 0}.hero p{font-size:18px;color:#e7f3ff;max-width:650px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}.hero-card{background:#fff;color:var(--ink);border-radius:24px;padding:24px;box-shadow:0 20px 60px #001d3f55}.hero-card h3{margin:0 0 8px;color:var(--navy);font-size:21px}.hero-card p{color:var(--muted);font-size:14px;margin:0 0 16px}.quick{display:grid;grid-template-columns:1fr 1fr;gap:10px}.quick a{background:var(--sky);padding:13px;border-radius:12px;font-weight:750;font-size:13px;color:var(--navy)}.ticker{background:#fff3bd;border-bottom:1px solid #f0df87;padding:11px 0;color:#493a00;font-size:14px}.ticker strong{color:#8c2b0a}.section{padding:52px 0}.section-head{margin-bottom:24px}.section-head .tag{color:var(--blue);font-size:12px;letter-spacing:1.5px;font-weight:900;text-transform:uppercase}.section h2{font-size:clamp(25px,3.3vw,36px);line-height:1.2;margin:7px 0 10px;color:var(--navy)}.section-head p{color:var(--muted);margin:0;max-width:720px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:var(--shadow)}.icon{width:48px;height:48px;display:grid;place-items:center;border-radius:14px;background:#e8f3ff;font-size:24px;margin-bottom:12px}.card h3{font-size:18px;color:var(--navy);margin:0 0 8px}.card p{font-size:14px;color:var(--muted);margin:0 0 13px}.textlink{font-size:14px;font-weight:850;color:var(--blue)}.kotak{background:linear-gradient(130deg,#fff,#f4f9ff);border:1px solid #cfe2f8;border-radius:24px;padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}.kotak h3{font-size:26px;line-height:1.2;color:var(--navy);margin:8px 0}.kotak ul{padding-left:20px}.kotak li{margin:7px 0}.notice{background:#fff8e4;border:1px solid #f2dc94;border-radius:14px;padding:14px 16px;font-size:13px;color:#604d15}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.step{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px}.num{background:var(--navy);color:#fff;border-radius:50%;width:34px;height:34px;display:grid;place-items:center;font-weight:900}.step h3{margin:12px 0 6px;color:var(--navy);font-size:17px}.step p{margin:0;color:var(--muted);font-size:14px}.support{background:linear-gradient(120deg,#092e60,#0b67b7);color:#fff;border-radius:24px;padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:center}.support h2{color:#fff}.support p{color:#e0efff}.contact-list{display:grid;gap:12px}.contact{background:#fff;color:var(--ink);border-radius:14px;padding:16px;display:flex;justify-content:space-between;align-items:center;gap:12px}.contact strong{display:block;color:var(--navy)}.contact small{color:var(--muted)}.faq details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px 18px;margin:10px 0}.faq summary{font-weight:800;color:var(--navy);cursor:pointer}.faq p{color:var(--muted);margin-bottom:0}.footer{background:#061e3d;color:#d7e5f5;padding:34px 0 90px}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:22px}.footer h3{color:#fff;margin-top:0}.footer a{display:block;margin:7px 0;color:#d7e5f5;font-size:14px}.copyright{border-top:1px solid #ffffff25;margin-top:24px;padding-top:18px;font-size:12px;color:#b8cce2}.float-help{position:fixed;right:14px;bottom:14px;z-index:20;background:#17a85b;color:#fff;border-radius:999px;padding:13px 17px;font-weight:900;box-shadow:0 8px 25px #001c3b40}.small{font-size:12px;color:var(--muted)}
+@media(max-width:800px){.nav{align-items:flex-start}.navlinks{gap:10px;flex-wrap:wrap;justify-content:flex-end;font-size:12px}.brand{font-size:18px}.nav .btn{display:none}.hero{padding:38px 0}.hero-grid,.kotak,.support{grid-template-columns:1fr}.hero-card{max-width:560px}.cards{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.wrap{width:91%}.nav{display:block}.navlinks{justify-content:flex-start;margin-top:12px;gap:14px}.hero h1{font-size:35px}.hero p{font-size:16px}.cards{grid-template-columns:1fr}.section{padding:38px 0}.quick{grid-template-columns:1fr 1fr}.kotak{padding:20px}.support{padding:22px}.contact{align-items:flex-start}.footer-grid{grid-template-columns:1fr}.float-help{right:10px;bottom:10px;font-size:13px}}
 </style>
 </head>
 <body>
-
-<header>
-<div class="logo">ALL <span>INDIA</span></div>
-<nav>
-<a href="#home">Home</a>
-<a href="#services">Services</a>
-<a href="#updates">Updates</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
-
-<div class="hero" id="home">
-<p>🇮🇳 ALL INDIA BANKING SERVICES</p>
-<h1>Bank Account Opening Assistance & Services</h1>
-<p>Bank account opening, BC/CSP information, banking agent work aur latest updates ek hi jagah.</p>
-<a class="btn" href="#contact">WhatsApp Contact</a>
-<a class="btn" href="#services">Our Services</a>
-</div>
-
-<section id="services">
-<h2>Our Services</h2>
-<div class="grid">
-<div class="card">
-<h3>🏦 Bank Account Opening</h3>
-<p>Bank account kholne ki process, eligibility aur required documents ki jankari.</p>
-</div>
-<div class="card">
-<h3>🪪 BC / CSP ID Assistance</h3>
-<p>Banking correspondent aur CSP registration ki eligibility aur authorized process ki jankari.</p>
-</div>
-<div class="card">
-<h3>💼 Banking Agent Work</h3>
-<p>Banking agent opportunities aur online banking work se sambandhit updates.</p>
-</div>
-<div class="card">
-<h3>📄 Documents Information</h3>
-<p>Aadhaar, PAN aur bank account opening mein lagne wale documents ki jankari.</p>
-</div>
-<div class="card">
-<h3>📢 Latest Updates</h3>
-<p>Banking services aur agent opportunities ke naye updates.</p>
-</div>
-<div class="card">
-<h3>🤝 Customer Assistance</h3>
-<p>Banking process samajhne ke liye humse sampark karein.</p>
-</div>
-</div>
-</section>
-
-<section id="updates">
-<h2>Latest Updates</h2>
-<div class="card">
-<h3>Welcome to ALL INDIA BANKING</h3>
-<p>Hamari website par banking services, BC/CSP information aur online work opportunities ke updates milenge.</p>
-</div>
-<p class="notice">Important: Bank ki ID ya agent appointment sirf sambandhit bank ya authorized service provider ke rules ke mutabik milti hai. Kisi ID ya job ki guarantee nahi di jaati.</p>
-</section>
-
-<section id="contact">
-<h2>Contact Us</h2>
-<div class="card">
-<p>Bank account opening assistance aur banking agent information ke liye WhatsApp par sampark karein.</p>
-<p><b>WhatsApp number:</b> Apna number jodne ke liye code mein WhatsApp link update karein.</p>
-<a class="btn" href="https://wa.me/91YOURNUMBER">WhatsApp Now</a>
-</div>
-</section>
-
-<footer>
-<b>ALL INDIA BANKING</b>
-<p>Banking Services | BC/CSP Information | Agent Work Updates</p>
-<p>We provide information and assistance. Final services are subject to bank/provider rules.</p>
-</footer>
-
-</body>
-  </html>
+<div class="topline">🇮🇳 आपकी सुविधा के लिए बैंकिंग जानकारी और डिजिटल सेवाएँ — एक ही जगह</div>
+<header class="header"><div class="wrap nav">
+<a class="brand" href="#home">ALL <span>INDIA</span><small>BANKING & DIGITAL SEVA</small></a>
+<nav class="navlinks"><a href="#home">होम</a><a href="#services">सभी सेवाएँ</a><a href="#kotak">Kotak Bank</a><a href="#updates">अपडेट</a><a href="#support">सहायता</a></nav>
+<a class="btn btn-green" href="https://wa.me/918294392530?text=Namaste%2C%20mujhe%20jankari%20chahiye" target="_blank" rel="noopener">WhatsApp संपर्क</a>
+</div></header>
+<main id="home">
+<section class="hero"><div class="wrap hero-grid"><div>
+<span class="eyebrow">विश्वसनीय जानकारी • आसान सहायता</span>
+<h1>बैंकिंग और जन सेवा की जानकारी, अब आसान हिंदी में</h1>
+<p>बैंक अकाउंट खोलने की जानकारी, Kotak 811, BC Agent कार्य और सरकारी ऑनलाइन सेवाओं की प्रक्रिया समझें। सहायता चाहिए तो सीधे WhatsApp पर संपर्क करें।</p>
+<div class="hero-actions"><a class="btn btn-gold" href="#kotak">🏦 Kotak Account जानकारी</a><a class="btn btn-green" href="https://wa.me/918709201799?text=Namaste%2C%20mujhe%20madad%20chahiye" target="_blank" rel="noopener">💬 मदद चाहिए</a></div>
+</div><div class="hero-card"><h3>👋 मैं आपकी कैसे मदद कर सकता हूँ?</h3><p>नीचे अपनी ज़रूरत चुनें। हम आपको जानकारी और सही प्रक्रिया समझाने में मदद करेंगे।</p><div class="quick">
+<a href="https://wa.me/918294392530?text=Namaste%2C%20mujhe%20bank%20account%20khulwane%20ki%20jankari%20chahiye" target="_blank" rel="noopener">🏦 बैंक अकाउंट</a>
+<a href="https://wa.me/918709201799?text=Namaste%2C%20mujhe%20BC%20Agent%20work%20ki%20jankari%20chahiye" target="_blank" rel="noopener">💼 BC Agent कार्य</a>
+<a href="#services">📄 सरकारी सेवाएँ</a><a href="#updates">🔔 नए अपडेट</a>
+</div><p class="small" style="margin-top:14px">कृपया WhatsApp पर OTP, PIN, पासवर्ड या पूरा बैंक विवरण साझा न करें।</p></div></div></section>
+<div class="ticker" id="updates"><div class="wrap"><strong>🔔 सूचना:</strong> सरकारी आवेदन की तारीख, शुल्क और पात्रता बदल सकती है। आवेदन से पहले संबंधित आधिकारिक पोर्टल पर जानकारी जाँचें। &nbsp; • &nbsp; <strong>अपडेट:</strong> नई जानकारी जल्द यहाँ जोड़ी जाएगी।</div></div>
+<section class="section" id="services"><div class="wrap"><div class="section-head"><span class="tag">Digital Seva</span><h2>जन सेवा डिजिटल सेंटर की सेवाएँ</h2><p>नीचे अलग-अलग सेवाओं की सामान्य जानकारी दी गई है। कुछ सेवाओं के लिए सरकारी पोर्टल, अधिकृत केंद्र या संबंधित विभाग की मंज़ूरी आवश्यक हो सकती है।</p></div>
+<div class="cards">
+<article class="card"><div class="icon">🪪</div><h3>आधार कार्ड</h3><p>आधार डाउनलोड, अपडेट की प्रक्रिया, PVC कार्ड और मोबाइल लिंकिंग की जानकारी। बायोमेट्रिक बदलाव के लिए अधिकृत केंद्र जाना पड़ सकता है।</p><a class="textlink" href="https://uidai.gov.in/" target="_blank" rel="noopener">आधिकारिक UIDAI वेबसाइट ↗</a></article>
+<article class="card"><div class="icon">💳</div><h3>PAN कार्ड</h3><p>नया PAN, e-PAN डाउनलोड, PAN में सुधार और Aadhaar-PAN लिंक की प्रक्रिया की जानकारी।</p><a class="textlink" href="https://www.incometax.gov.in/" target="_blank" rel="noopener">आयकर विभाग ↗</a></article>
+<article class="card"><div class="icon">🗳️</div><h3>वोटर ID कार्ड</h3><p>नया मतदाता पंजीकरण, विवरण सुधार और आवेदन की स्थिति जाँचने की जानकारी।</p><a class="textlink" href="https://voters.eci.gov.in/" target="_blank" rel="noopener">Voters’ Service Portal ↗</a></article>
+<article class="card"><div class="icon">🍚</div><h3>राशन कार्ड</h3><p>नया राशन कार्ड, सदस्य जोड़ने/हटाने, e-KYC और आवेदन की स्थिति से जुड़ी जानकारी। नियम राज्य के अनुसार अलग हो सकते हैं।</p><a class="textlink" href="https://nfsa.gov.in/" target="_blank" rel="noopener">NFSA पोर्टल ↗</a></article>
+<article class="card"><div class="icon">📜</div><h3>जाति, आय और निवास प्रमाण पत्र</h3><p>आवेदन की प्रक्रिया, आवश्यक दस्तावेज़ और प्रमाण पत्र डाउनलोड करने की जानकारी।</p><a class="textlink" href="https://serviceonline.bihar.gov.in/" target="_blank" rel="noopener">बिहार ServiceOnline ↗</a></article>
+<article class="card"><div class="icon">👶</div><h3>जन्म एवं मृत्यु प्रमाण पत्र</h3><p>पंजीकरण, प्रमाण पत्र और सुधार की प्रक्रिया की सामान्य जानकारी। संबंधित स्थानीय निकाय के नियम लागू होंगे।</p><a class="textlink" href="https://crsorgi.gov.in/" target="_blank" rel="noopener">आधिकारिक पोर्टल ↗</a></article>
+<article class="card"><div class="icon">🎓</div><h3>छात्रवृत्ति और विद्यार्थी सेवाएँ</h3><p>छात्रवृत्ति आवेदन, दस्तावेज़, एडमिट कार्ड, परीक्षा फॉर्म और आवेदन स्थिति की जानकारी।</p><a class="textlink" href="https://scholarships.gov.in/" target="_blank" rel="noopener">National Scholarship Portal ↗</a></article>
+<article class="card"><div class="icon">🧑‍💼</div><h3>नौकरी और परीक्षा फॉर्म</h3><p>सरकारी भर्ती, परीक्षा आवेदन, आवश्यक दस्तावेज़ और आधिकारिक नोटिस खोजने में सहायता।</p><a class="textlink" href="https://www.ncs.gov.in/" target="_blank" rel="noopener">National Career Service ↗</a></article>
+<article class="card"><div class="icon">🌾</div><h3>जमीन संबंधी सेवाएँ</h3><p>जमीन के रिकॉर्ड, जमाबंदी, दाखिल-खारिज और नक्शे से जुड़ी जानकारी। सेवा उपलब्धता राज्य के अनुसार अलग है।</p><a class="textlink" href="https://biharbhumi.bihar.gov.in/" target="_blank" rel="noopener">Bihar Bhumi ↗</a></article>
+<article class="card"><div class="icon">👵</div><h3>पेंशन और सरकारी योजनाएँ</h3><p>पात्रता, आवेदन प्रक्रिया, आवश्यक दस्तावेज़ और भुगतान की स्थिति जाँचने में सहायता।</p><a class="textlink" href="https://www.india.gov.in/" target="_blank" rel="noopener">भारत सरकार पोर्टल ↗</a></article>
+<article class="card"><div class="icon">🖨️</div><h3>ऑनलाइन दस्तावेज़ सहायता</h3><p>फॉर्म भरने, दस्तावेज़ों की सूची समझने, प्रिंट/स्कैन और आवेदन स्थिति जाँचने में सहायता।</p><a class="textlink" href="#support">सहायता माँगें →</a></article>
+<article class="card"><div class="icon">💰</div><h3>लोन की सामान्य जानकारी</h3><p>लोन के प्रकार, पात्रता और आधिकारिक बैंक/वित्तीय संस्था से जानकारी लेने का मार्गदर्शन। मंज़ूरी की गारंटी नहीं दी जाती।</p><a class="textlink" href="#support">सवाल पूछें →</a></article>
+</div></div></section>
+<section class="section" id="kotak" style="background:#edf5ff"><div class="wrap"><div class="kotak"><div><span class="eyebrow" style="background:#e1efff;color:#0b4b88;border-color:#c8e1fa">BANKING INFORMATION</span><h3>Kotak 811 Digital Savings Account</h3><p>अकाउंट खोलने की प्रक्रिया, पात्रता, आवश्यक जानकारी और बैंक की शर्तें समझें। अकाउंट खोलना बैंक की जाँच और वर्तमान नियमों के अधीन है।</p><ul><li>ऑनलाइन आवेदन की जानकारी</li><li>बैंक द्वारा बताई गई KYC प्रक्रिया</li><li>डेबिट कार्ड, UPI और डिजिटल बैंकिंग की जानकारी</li><li>आवेदन से पहले लागू शर्तें और शुल्क जाँचें</li></ul><a class="btn btn-blue" href="https://www.kotak.com/" target="_blank" rel="noopener">Kotak Bank की आधिकारिक वेबसाइट ↗</a></div><div><h3>💼 Kotak BC Agent / Banking Work</h3><p>BC/CSP या बैंकिंग एजेंट बनने में रुचि है? पात्रता, अधिकृत सेवा प्रदाता, उपलब्ध अवसर और प्रक्रिया के बारे में पूछें।</p><div class="notice"><strong>ज़रूरी सूचना:</strong> BC ID या नौकरी की गारंटी नहीं है। किसी भी व्यक्ति को पैसे देने से पहले बैंक/अधिकृत सेवा प्रदाता से उसकी प्रामाणिकता जाँचें। यह वेबसाइट Kotak Mahindra Bank की आधिकारिक वेबसाइट नहीं है।</div><div class="hero-actions"><a class="btn btn-green" href="https://wa.me/918294392530?text=Namaste%2C%20mujhe%20Kotak%20811%20account%20ki%20jankari%20chahiye" target="_blank" rel="noopener">अकाउंट सहायता</a><a class="btn btn-blue" href="https://wa.me/918709201799?text=Namaste%2C%20mujhe%20BC%20Agent%20work%20ki%20jankari%20chahiye" target="_blank" rel="noopener">BC Agent जानकारी</a></div></div></div></div></section>
+<section class="section"><div class="wrap"><div class="section-head"><span class="tag">Simple process</span><h2>सहायता कैसे मिलेगी?</h2><p>आपको अपनी ज़रूरत बतानी है। फिर संबंधित सेवा की सही प्रक्रिया और आधिकारिक लिंक साझा किए जा सकते हैं।</p></div><div class="steps"><div class="step"><div class="num">1</div><h3>सेवा चुनें</h3><p>बैंक अकाउंट, BC Agent कार्य या जन सेवा में से अपनी ज़रूरत चुनें।</p></div><div class="step"><div class="num">2</div><h3>WhatsApp पर पूछें</h3><p>अपना सवाल और सेवा का नाम लिखकर संपर्क करें। संवेदनशील जानकारी न भेजें।</p></div><div class="step"><div class="num">3</div><h3>प्रक्रिया समझें</h3><p>आवश्यक दस्तावेज़, आधिकारिक पोर्टल और लागू नियमों की जानकारी लें।</p></div></div></div></section>
+<section class="section" id="support"><div class="wrap"><div class="support"><div><span class="eyebrow">CUSTOMER SUPPORT</span><h2>मैं आपकी कैसे मदद कर सकता हूँ?</h2><p>अकाउंट खोलने, BC Agent कार्य, सरकारी फॉर्म या किसी डिजिटल सेवा के बारे में सवाल है? सही व्यक्ति को संदेश भेजें।</p><div class="notice">अपना OTP, ATM PIN, UPI PIN, पासवर्ड या पूरा आधार/बैंक विवरण WhatsApp पर कभी न भेजें।</div></div><div class="contact-list"><div class="contact"><div><strong>Bharat Kumar Das</strong><small>बैंक अकाउंट और डिजिटल सेवा सहायता</small><br><b>8294392530</b></div><a class="btn btn-green" href="https://wa.me/918294392530?text=Namaste%2C%20mujhe%20madad%20chahiye" target="_blank" rel="noopener">संदेश भेजें</a></div><div class="contact"><div><strong>Sachin Kumar</strong><small>सामान्य सहायता और जानकारी</small><br><b>8709201799</b></div><a class="btn btn-green" href="https://wa.me/918709201799?text=Namaste%2C%20mujhe%20madad%20chahiye" target="_blank" rel="noopener">संदेश भेजें</a></div></div></div></div></section>
+<section class="section faq"><div class="wrap"><div class="section-head"><span class="tag">Help centre</span><h2>अक्सर पूछे जाने वाले सवाल</h2></div><details><summary>क्या यहाँ से बैंक अकाउंट सीधे खुल जाएगा?</summary><p>यह वेबसाइट जानकारी और सहायता देती है। अकाउंट खोलने के लिए बैंक के आधिकारिक पोर्टल और उसकी KYC प्रक्रिया पूरी करनी होगी।</p></details><details><summary>क्या BC/CSP ID मिलने की गारंटी है?</summary><p>नहीं। पात्रता, उपलब्धता और मंज़ूरी संबंधित बैंक या अधिकृत सेवा प्रदाता पर निर्भर करती है।</p></details><details><summary>सरकारी सेवाओं का शुल्क कितना है?</summary><p>शुल्क सेवा और राज्य के अनुसार बदल सकता है। आवेदन करने से पहले संबंधित आधिकारिक पोर्टल या अधिकृत केंद्र से पुष्टि करें।</p></details><details><summary>क्या मैं WhatsApp पर दस्तावेज़ भेज सकता हूँ?</summary><p>पहले पूछें कि दस्तावेज़ की ज़रूरत है या नहीं। OTP, PIN, पासवर्ड या संवेदनशील बैंक जानकारी कभी साझा न करें।</p></details></div></section>
+</main>
+<footer class="footer"><div class="wrap"><div class="footer-grid"><div><h3>ALL INDIA BANKING & DIGITAL SEVA</h3><p>बैंकिंग जानकारी और डिजिटल सेवाओं के लिए सरल हिंदी में सहायता।</p><p class="small" style="color:#b8cce2">स्वतंत्र जानकारी सहायता वेबसाइट। किसी बैंक या सरकारी विभाग की आधिकारिक वेबसाइट नहीं।</p></div><div><h3>त्वरित लिंक</h3><a href="#services">सभी सेवाएँ</a><a href="#kotak">Kotak Bank जानकारी</a><a href="#updates">नए अपडेट</a><a href="#support">ग्राहक सहायता</a></div><div><h3>संपर्क</h3><a href="https://wa.me/918294392530" target="_blank" rel="noopener">Bharat Kumar Das · 8294392530</a><a href="https://wa.me/918709201799" target="_blank" rel="noopener">Sachin Kumar · 8709201799</a></div></div><div class="copyright">© <span id="year"></span> ALL INDIA BANKING & DIGITAL SEVA. सभी अधिकार सुरक्षित। जानकारी बदल सकती है; अंतिम पुष्टि संबंधित आधिकारिक स्रोत से करें।</div></div></footer>
+<a class="float-help" href="https://wa.me/918294392530?text=Namaste%2C%20mujhe%20madad%20chahiye" target="_blank" rel="noopener">💬 मदद चाहिए?</a>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>
